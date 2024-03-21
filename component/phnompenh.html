@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Dosis", sans-serif;
+      }
+      .main-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+      }
+      .container {
+        width: 80%;
+        /* background-color: skyblue; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .image-header {
+        width: 100%;
+        flex: 1;
+        border-bottom: 5px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+      }
+      .full-image {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        object-fit: cover;
+      }
+      .full-image img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .image-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+      }
+      .image-title img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .detail-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .info {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        height: 150px;
+        padding: 10px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+      }
+      .info-image {
+        flex: 0.3;
+        overflow: hidden;
+        height: 100%;
+        border-radius: 5px;
+      }
+      .info-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .info-des {
+        flex: 1;
+      }
+      .title-place {
+        font-size: 20px;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+      .des p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        height: 58px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="image-header">
+          <div class="full-image">
+            <img src="../img/provinces/phnompenh.jpeg" alt="" />
+          </div>
+          <div class="image-title">
+            <img src="../img/provinces/phnompenh.jpeg" alt="" />
+            <div class="img-title">Phnom Penh</div>
+          </div>
+        </div>
+        <div class="detail-info">
+          <div class="info">
+            <div class="info-image">
+              <img src="../img/image-8.jpg" alt="" />
+            </div>
+            <div class="info-des">
+              <div class="des-title">
+                <div class="title-place">Royal Palace</div>
+                <div class="header-star"></div>
+              </div>
+              <div class="des">
+                <p>
+                  The Royal Palace, in Chey Chumneas, Phnom Penh, Cambodia, is a
+                  complex of buildings which serves as the royal residence of
+                  the king of Cambodia. Its full name in the Khmer language is
+                  Preah Barum Reachea Veang Chaktomuk Serei Mongkol. The Kings
+                  of Cambodia have occupied it since it was built in the 1860s,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-image">
+              <img src="../img/detail/toulslaeng.jfif" alt="" />
+            </div>
+            <div class="info-des">
+              <div class="des-title">
+                <div class="title-place">Tuol Sleng Genocide Museum</div>
+                <div class="header-star"></div>
+              </div>
+              <div class="des">
+                <p>
+                  The Tuol Sleng Genocide Museum or simply Tuol Sleng is a
+                  museum chronicling the Cambodian genocide. Located in Phnom
+                  Penh, the site is a former secondary school which was used as
+                  Security Prison 21 by the Khmer Rouge regime from 1975 until
+                  its fall in 1979. From 1976 to 1979
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-image">
+              <img src="../img/detail/palacio.jfif" alt="" />
+            </div>
+            <div class="info-des">
+              <div class="des-title">
+                <div class="title-place">Palacio Real de Nom Pen</div>
+                <div class="header-star"></div>
+              </div>
+              <div class="des">
+                <p>
+                  The Royal Palace of Cambodia is a complex of buildings which
+                  serves as the royal residence of the King of Cambodia. Its
+                  full name in Khmer is the Preah Barom Reacheaveang Chaktomuk
+                  Serey Mongkol
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-image">
+              <img src="../img/detail/independent.jfif" alt="" />
+            </div>
+            <div class="info-des">
+              <div class="des-title">
+                <div class="title-place">Independence Monument</div>
+                <div class="header-star"></div>
+              </div>
+              <div class="des">
+                <p>
+                  The Independence Monument in Phnom Penh, capital of Cambodia,
+                  was built in 1958 to memorialise Cambodia's independence from
+                  France in 1953.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200&family=Khmer&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+      .provinces {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+      }
+      .province {
+        overflow: hidden;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px,
+          rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+        transition: 0.2s ease-in-out;
+      }
+      .province:hover {
+        transform: scale(1.03);
+      }
+      .province-image {
+        height: 55%;
+      }
+      .province-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        padding: 12px;
+      }
+      .province-info {
+        flex: 1;
+        padding: 0px 12px 12px 12px;
+      }
+      .province-name {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+      }
+      .name {
+        font-size: 16px;
+        margin-right: 5px;
+        white-space: nowrap;
+        font-family: "Alexandria", sans-serif;
+        font-family: "Khmer", cursive;
+      }
+      .name-en {
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      .description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        font-size: 14px;
+        height: 50px;
+        margin-bottom: 8px;
+        font-family: "Alexandria", sans-serif;
+        font-family: "Khmer", cursive;
+      }
+      .btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+      .more-btn {
+        background-color: skyblue;
+        width: 60px;
+        border-radius: 3px;
+        padding: 5px 0px;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+      }
+      .province-detail {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000a6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .detail {
+        width: 55%;
+        background-color: #fff;
+        border-radius: 3px;
+        min-height: 450px;
+        overflow: hidden;
+      }
+      .btn-close {
+        cursor: pointer;
+      }
+      .btn-close .line {
+        width: 1.3rem;
+        height: 0.15rem;
+        background-color: #000;
+        margin: 0.2em 0;
+      }
+      .province-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 400px;
+        overflow: hidden;
+      }
+      .detail-title {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 12px;
+      }
+      .detail-image {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        height: 100%;
+      }
+      .provice-title {
+        margin-bottom: 15px;
+      }
+      .detail-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        padding: 0px 12px 12px 12px;
+      }
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Alexandria", sans-serif;
+        font-family: "Khmer", cursive;
+      }
+      .province-des p {
+        font-family: "Alexandria", sans-serif;
+        font-family: "Khmer", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container" id="container">
+      <!-- start header -->
+      <div class="header">
+        <div class="logo">
+          <img src="../img/main-logo.png" alt="" />
+        </div>
+        <ul class="nav-bar" id="nav-bar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./province.html" class="active">Province</a></li>
+          <li><a href="./food.html">food</a></li>
+          <!-- <li><a href="./tourist.html">Tourist sites</a></li> -->
+        </ul>
+        <div class="bars" id="bars">
+          <div class="bar" id="bar1"></div>
+          <div class="bar" id="bar2"></div>
+          <div class="bar" id="bar3"></div>
+        </div>
+      </div>
+      <!-- end header -->
+      <div class="page-title">ខេត្ដទាំង ២៥ ក្នុងប្រទេសកម្ពុជា</div>
+      <div class="container">
+        <div class="provinces" id="provinces"></div>
+      </div>
+      <div class="footer">
+        <p>create by Y4E7G7 | all rught reserved!</p>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/province.js"></script>
+  </body>
+</html>

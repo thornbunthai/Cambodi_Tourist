@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Dosis", sans-serif;
+      }
+      .main-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+      }
+      .container {
+        width: 80%;
+        /* background-color: skyblue; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .image-header {
+        width: 100%;
+        flex: 1;
+        border-bottom: 5px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+      }
+      .full-image {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        object-fit: cover;
+      }
+      .full-image img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .image-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+      }
+      .image-title img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .detail-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .info {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        height: 150px;
+        padding: 10px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+      }
+      .info-image {
+        flex: 0.3;
+        overflow: hidden;
+        height: 100%;
+        border-radius: 5px;
+      }
+      .info-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .info-des {
+        flex: 1;
+      }
+      .title-place {
+        font-size: 20px;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+      .des p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        height: 58px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="image-header">
+          <div class="full-image">
+            <img src="../img/provinces/seimreap.jpeg" alt="" />
+          </div>
+          <div class="image-title">
+            <img src="../img/provinces/seimreap.jpeg" alt="" />
+            <div class="img-title">Siem Reap</div>
+          </div>
+        </div>
+        <div class="detail-info">
+          <div class="info">
+            <div class="info-image">
+              <img src="../img/detail/angkor.jfif" alt="" />
+            </div>
+            <div class="info-des">
+              <div class="des-title">
+                <div class="title-place">Angkor Wat</div>
+                <div class="header-star"></div>
+              </div>
+              <div class="des">
+                <p>
+                  Angkor Wat is a temple complex in Cambodia and is the largest
+                  religious monument in the world, on a site measuring 162.6
+                  hectares. Originally constructed as a Hindu temple dedicated
+                  to the god Vishnu for the Khmer Empire by King Suryavarman II,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-image">
+              <img src="../img/detail/taprom.jfif" alt="" />
+            </div>
+            <div class="info-des">
+              <div class="des-title">
+                <div class="title-place">Ta Prohm Temple</div>
+                <div class="header-star"></div>
+              </div>
+              <div class="des">
+                <p>
+                  Ta Prohm is the modern name of the temple in Siem Reap,
+                  Cambodia, built in the Bayon style largely in the late 12th
+                  and early 13th centuries and originally called Rajavihara.
+                  Located approximately one kilometre east of Angkor Thom and on
+                  the southern edge of the East Baray
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-image">
+              <img src="../img/detail/bayon.jfif" alt="" />
+            </div>
+            <div class="info-des">
+              <div class="des-title">
+                <div class="title-place">Bayon Temple</div>
+                <div class="header-star"></div>
+              </div>
+              <div class="des">
+                <p>
+                  The Bayon is a richly decorated Khmer temple related to
+                  Buddhism at Angkor in Cambodia. Built in the late 12th or
+                  early 13th century as the state temple of the King Jayavarman
+                  VII, the Bayon stands at the centre of Jayavarman's capital,
+                  Angkor Thom.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-image">
+              <img src="../img/detail/neakpoun.jfif" alt="" />
+            </div>
+            <div class="info-des">
+              <div class="des-title">
+                <div class="title-place">Neak Pount</div>
+                <div class="header-star"></div>
+              </div>
+              <div class="des">
+                <p>
+                  Neak Pean at Angkor, Cambodia is an artificial island with a
+                  Buddhist temple on a circular island in Jayatataka Baray,
+                  which was associated with Preah Khan temple, built during the
+                  reign of King Jayavarman VII. It is the "Mebon" of the Preah
+                  Khan baray.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
